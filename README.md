@@ -301,3 +301,62 @@ task_two.delete()
 ```
 
 
+## UI က နေ CRUD လုပ်ကြမယ်။
+
+
+user account ဖောက်မယ်။
+```
+python manage.py createsuperuser
+```
+
+```log
+msd@MSDs-Mac-mini mysite % python manage.py createsuperuser
+Username (leave blank to use 'msd'): admin
+Email address: admin@email.com
+Password: 
+Password (again): 
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+msd@MSDs-Mac-mini mysite % 
+```
+
+admin panel ကို ဝင်ကြမယ်။
+
+python manage.py runserver 0.0.0.0:8080
+
+
+http://127.0.0.1:8080/admin/
+
+
+username နဲ့ password ထည့်။
+
+Make the tdl app modifiable in the admin
+
+### Task ကို Admin Panel ထဲကို ထည့်မယ်။
+
+```tdl/admin.py``` မှာ ပြင်မယ်။
+
+```python
+from django.contrib import admin
+
+from .models import Question
+
+admin.site.register(Question)
+```
+
+
+
+
+
+
+column တစ်ခုပဲ​ပြနေတယ်။
+
+နှစ်ခု ပြချင်တယ်။
+
+admin.py မှာ ထည့်မယ်။
+
+class BookAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author', 'price')
+
+    
