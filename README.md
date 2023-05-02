@@ -377,3 +377,12 @@ admin.site.index_title = "To Do List"
 - မြို့ / နေရာ (Place) Module
 - One to Many ( ကျောင်းသား -> Gender , Blood Type , Parent )
 - Shortest Path
+- custom ui
+
+
+### View ဆိုသည်မှာ 
+
+
+## Note
+လောကြီးတာကို လျှော့ပါ။
+ဖြစ်ချင်တာတွေကို စာရင်းလုပ်ထားပါ။
