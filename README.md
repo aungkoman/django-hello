@@ -67,3 +67,40 @@ urlpatterns = [
     path("/hello", views.index),
 ]
 ```
+
+အိုကေ ဒီ (၂)​ဖိုင် ရေးပြီးသွားရင် App အပိုင်းမှာ ပြီးပြီ။
+
+ပရောဂျက်နဲ့ app နဲ့ ကို ချိတ်မယ်။
+
+project urls file ဖြစ်တဲ့ ```mysite/urls.py``` မှာ tdl app ကို ထည့်မယ်။
+
+```python
+# ဒါက နဂို ရှိတဲ့ url patterns array
+urlpatterns = [
+    path("admin/", admin.site.urls),
+]
+
+# tdl app က url file ကိုထည့်မယ်။
+urlpatterns = [
+    # tdl လို url မှာ ပါလာရင် tdl folder ထဲက urls.py ကို run ပါ
+    path("tdl/", include("tdl.urls")),
+    path("admin/", admin.site.urls),
+]
+
+# ဒီမှာ include ဆိုတဲ့ function ပါတယ်။ ဒီ include ဆိုတဲ့ function ကို​ django.urls ဆိုတဲ့ module ထဲက import လုပ်ရမယ်။
+
+from django.urls import include
+
+# ဆိုတော့ ဖိုင်နယ်ကုတ်က ဒါမျိုး ဖြစ်မယ်။
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path("tdl/", include("tdl.urls")),
+    path("admin/", admin.site.urls),
+]
+```
+
+အချိန် ```python manage.py runserver 0.0.0.0:8080``` လို့ run ပြီး
+broswer မှာ 127.0.0.1:8080/tdl/hello လို့ ရိုက်ထည့်လိုက်ရင် "Hello World" လို့ ပေါ်လာပါလိမ့်မယ်။
+
