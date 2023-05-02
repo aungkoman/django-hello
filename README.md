@@ -359,4 +359,21 @@ admin.py မှာ ထည့်မယ်။
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'price')
 
-    
+
+### Admin Panel က Title ကို ပြင်မယ်။
+
+```mysite/tdl/admin.py``` 
+```python
+admin.site.site_header = "To Do List"
+admin.site.site_title = "Admin Panel"
+admin.site.index_title = "To Do List"
+```
+
+
+
+### Next Step
+
+- ကျောင်းသား Module 
+- မြို့ / နေရာ (Place) Module
+- One to Many ( ကျောင်းသား -> Gender , Blood Type , Parent )
+- Shortest Path
