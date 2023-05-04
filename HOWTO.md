@@ -2,7 +2,7 @@
 
 ## Create Django Project 
 
-```
+```bash
 # create django project
 django-admin startproject mysite
 # mysite is project name 
