@@ -26,6 +26,8 @@ python manage.py runserver
 # tdl is app name
 python manage.py startapp tdl
 
+```
+```bash
 # step 2
 # create urls.py file inside tdl folder
 # type following code in tdl/urls.py
