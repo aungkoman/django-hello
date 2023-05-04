@@ -10,4 +10,6 @@ django-admin startproject mysite
 # go to django project and run
 cd mysite
 python manage.py runserver
+
+# open http://127.0.0.1:8000/ in browser
 ```
