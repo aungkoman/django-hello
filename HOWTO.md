@@ -82,4 +82,37 @@ INSTALLED_APPS = [
 # completely added  
 ```
 
+
+## Hello World in Django App
+
+### Step 1 : create a function in views.py
+```tdl/views.py```
+```python
+from django.shortcuts import render
+# step 1.1 import HttpResponse 
+from django.http import HttpResponse
+
+# step 1.2 create function with request parameter
+# index is function name
+def index(request):
+    # step 1.3 return content with HttpResponse
+    return HttpResponse("Hello World")
 ```
+
+
+### Step 2 : invoke the function in urls.py
+```tdl/urls.py```
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    # add first element to urlpatterns array
+    # path function accept two parameter
+    # first parameter is url path
+    # second parameter is function name 
+    path("hello/", views.index),
+]
+```
+
+### Step 3 : see result in 127.0.0.0:8000/tdl/hello/
