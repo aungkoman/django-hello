@@ -2,10 +2,10 @@ from django.db import models
 
 # Create your models here.
 class Task(models.Model):
-    # member data
+    # member data 
     name = models.TextField()
     status = models.BooleanField()
 
-    # methods
+    # method / function 
     def __str__(self):
-        return self.name
+        return str(self.id) + " " + self.name
