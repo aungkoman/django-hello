@@ -386,3 +386,11 @@ admin.site.index_title = "To Do List"
 ## Note
 လောကြီးတာကို လျှော့ပါ။
 ဖြစ်ချင်တာတွေကို စာရင်းလုပ်ထားပါ။
+
+
+## Requirement
+
+- [ ] Add new application 'ecommerce'
+- [ ] Add model 'products' => https://www.citymall.com.mm/
+- [ ] Add model 'books' => https://www.pannsattlann.com/product/shin-than-chin/
+- [ ] Manage 'products' & 'books' in Admin Panel
