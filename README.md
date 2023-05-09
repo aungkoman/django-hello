@@ -394,3 +394,19 @@ admin.site.index_title = "To Do List"
 - [ ] Add model 'products' => https://www.citymall.com.mm/
 - [ ] Add model 'books' => https://www.pannsattlann.com/product/shin-than-chin/
 - [ ] Manage 'products' & 'books' in Admin Panel
+
+
+## News App
+
+- [ ] add application => 'news' python manage.py startapp news
+- [ ] url file added in news folder
+- [ ] update mysite/urls.py to link with news.py
+- [ ] update mysite/setting.py -> config file linked
+
+
+## News Models
+
+- [ ] spefcify models
+- [ ] make migrations, migrate
+- [ ] Python Shell 
+- [ ] Admin Panel Registration -> news/admin.py
