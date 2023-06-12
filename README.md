@@ -383,9 +383,6 @@ admin.site.index_title = "To Do List"
 ### View ဆိုသည်မှာ 
 
 
-## Note
-လောကြီးတာကို လျှော့ပါ။
-ဖြစ်ချင်တာတွေကို စာရင်းလုပ်ထားပါ။
 
 
 ## Requirement
